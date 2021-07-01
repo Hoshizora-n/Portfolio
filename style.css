@@ -1,0 +1,31 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#about ul {
+    margin-bottom: 5px;
+}
+
+#projects .card a {
+    transition: all 200ms;
+}
+
+#projects .card a img:hover {
+    transition: filter 200ms;
+    filter: brightness(40%);
+}
+
+#projects .card a:hover::after {
+    content: "Click to visit";
+    color: white;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact img {
+    max-width: 30vw;
+    width: 100%;
+}
